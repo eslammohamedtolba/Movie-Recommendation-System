@@ -9,7 +9,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 # Load the dataset
-Movies_dataset = pd.read_csv('/content/movies.csv')
+Movies_dataset = pd.read_csv('movies.csv')
 # Show the first five rows in the dataset
 Movies_dataset.head()
 # Show the last five rows in the dataset
