@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movie-Recommendation-System</title>
+</head>
+<body>
+    <h1>Write movie name to recommend similar movies</h1>
+    <form method="POST" action="{{ url_for('predict') }}">
+        <input type="text" id="input" name="input" placeholder="movie name" required>
+        <input type="text" id="input" name="num_movies" placeholder="number of recommended movies" required>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Recommend</button>
+    </form>
+    {% if list_movies != [] %}
+        <div class="recommended_movies">
+            {% for movie in list_movies %}
+                <p class="prediction">{{movie}}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>
+
+
+
