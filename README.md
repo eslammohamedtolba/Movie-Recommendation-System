@@ -1,6 +1,7 @@
 # Movie-Recommendation-System
 This is a movie recommendation system that provides movie suggestions based on user input.
 The system uses cosine similarity to find movies that are similar to the user's favorite movie.
+
 ![image about the final project](<Movie Recommendation System.png>)
 
 ## Prerequisites
